@@ -275,11 +275,11 @@ public class ActiveNotifier implements FineGrainedNotifier {
 
         private static final Pattern aTag = Pattern.compile("(?i)<a([^>]+)>(.+?)</a>|(\\{)");
         private static final Pattern href = Pattern.compile("\\s*(?i)href\\s*=\\s*(\"([^\"]*\")|'[^']*'|([^'\">\\s]+))");
-        private static final String BACK_TO_NORMAL_STATUS_MESSAGE = "Back to normal",
-                                    STILL_FAILING_STATUS_MESSAGE = "Still Failing",
+        private static final String BACK_TO_NORMAL_STATUS_MESSAGE = "@channel Back to normal",
+                                    STILL_FAILING_STATUS_MESSAGE = "@channel Still Failing",
                                     SUCCESS_STATUS_MESSAGE = "Success",
-                                    FAILURE_STATUS_MESSAGE = "Failure",
-                                    ABORTED_STATUS_MESSAGE = "Aborted",
+                                    FAILURE_STATUS_MESSAGE = "@channel Failure",
+                                    ABORTED_STATUS_MESSAGE = "@channel Aborted",
                                     NOT_BUILT_STATUS_MESSAGE = "Not built",
                                     UNSTABLE_STATUS_MESSAGE = "Unstable",
                                     REGRESSION_STATUS_MESSAGE = "Regression",
